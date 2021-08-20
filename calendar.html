@@ -1,0 +1,59 @@
+<!-- 원본 : https://im-developer.tistory.com/115 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calendar.css">
+  <link rel="stylesheet" href="reset.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="my-calendar clearfix">
+      <div class="calendar-box">
+        <div >
+          <div class="ctr-box clearfix">
+            <p class="cal-year"></p>
+            <p class="cal-month"></p>
+            <button type="button" title="prev" class="btn-cal prev"></button>
+            <button type="button" title="next" class="btn-cal next"></button>
+          </div>
+        </div>
+        <table class="cal-table">
+          <thead>
+            <tr>
+              <th>일</th>
+              <th>월</th>
+              <th>화</th>
+              <th>수</th>
+              <th>목</th>
+              <th>금</th>
+              <th>토</th>
+            </tr>
+          </thead>
+          <tbody class="cal-body"></tbody>
+        </table>
+      </div>
+      <div class="clicked-date">
+        <div class="cal-day"></div>
+        <div class="cal-date"></div>
+      </div>
+    </div>
+    <!-- // .my-calendar -->
+  </div>
+  <script type="text/javascript" src="calendar.js"></script>
+</body>
+</html>
+
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        일자: <input type="text" id="datepicker">
+        
+        <script>
+            $("#datepicker").datepicker();
+        </script> -->
