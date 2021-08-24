@@ -38,6 +38,7 @@ const init = {
   const $btnNext = document.querySelector('.btn-cal.next');
   const $btnPrev = document.querySelector('.btn-cal.prev');
   
+  
   /**
    * @param {number} date
    * @param {number} dayIn
@@ -55,8 +56,6 @@ const init = {
     let firstDay = init.getFirstDay(yy, mm);
     let lastDay = init.getLastDay(yy, mm);
     let markToday;  // for marking today date
-    console.log("fd : " + firstDay);
-    console.log("ld : " + lastDay);
     if (mm === init.today.getMonth() && yy === init.today.getFullYear()) {
       markToday = init.today.getDate();
     }
@@ -130,9 +129,10 @@ const init = {
       }
       let day = Number(e.target.textContent);
       loadDate(day, e.target.cellIndex);
-      e.target.classList.add('day-active');
+      // e.target.classList.add('day-active');
       init.activeDTag = e.target;
       init.activeDate.setDate(day);
+      alert(day);
       reloadTodo();
     }
   });

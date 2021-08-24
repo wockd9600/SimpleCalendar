@@ -98,8 +98,8 @@ html, body {
     cursor: pointer;
   }
   .cal-table td.today {
-    background: #ffd255;
-    color: #fff;
+    /* background: #ffd255; */
+    box-shadow: 0 0 0 0.12rem rgb(70, 79, 90) inset; 
   }
   .cal-table td.day-active {
     background: #ff8585;
